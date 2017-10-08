@@ -1,0 +1,9 @@
+<ion-content id="content" class="bg">
+  <p class="change-lang" (click)="changeLang()">{{'language' | translate}}</p> 
+   <img src="assets/img/Moadi.png">
+   <p class="cont">{{'desc' | translate}}
+   </p>
+  <button ion-button (click)="skip()" class="skip" color="light">{{'skip' | translate}}</button>
+  <button ion-button (click)="login()" class="login" color="secondary">{{'login' | translate}}</button>
+  <button ion-button (click)="signup()" class="signup">{{'signup' | translate}} <i class="zmdi zmdi-ungroup"></i></button>
+</ion-content>

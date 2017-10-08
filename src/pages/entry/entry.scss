@@ -1,0 +1,60 @@
+page-entry {
+    .change-lang{
+        padding: 0 10px;
+    }
+    .bg {
+        background-image: url('../assets/img/entry-bg.png');
+        background-size: cover;
+    }
+    img {
+        max-width: 100%;
+        border: 0;
+        position: absolute;
+        top: 15%;
+        left: 35%;
+        /* text-align: center; */
+    }
+    .cont {
+        color: white;
+        font-family: Thesansarab;
+        text-align: center;
+        top: 35%;
+        position: absolute;
+        margin: 10%;
+    }
+    .login {
+        color: #fff;
+        background-color: #8aae0f;
+        width: 50%;
+        border-radius: 0px;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        margin: 0;
+        font-family: Thesansarab;
+        padding: 8%;
+    }
+    .signup {
+        color: #8aae0f;
+        background-color: white;
+        width: 50%;
+        border-radius: 0px;
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        margin: 0;
+        font-family: Thesansarab;
+        padding: 8%;
+    }
+    .skip {
+        color: #fff;
+        background-color: #167178;
+        position: absolute;
+        top: 65%;
+        border-radius: 0px;
+        width: 50%;
+        left: 25%;
+        font-family: Thesansarab;
+        padding: 8%;
+    }
+}

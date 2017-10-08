@@ -1,19 +1,38 @@
-<ion-menu [content]="content">
+<ion-menu [content]="content" id="menu1" [attr.side]="this.platform.dir() === 'ltr' ? 'left' : 'right'">
   <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
+      <ion-toolbar padding color="light">
+          <img class="avatar" [src]="us.user.profilePictureurl">
+          <p></p>
+          <p>{{us.user.Name}}</p>
+      </ion-toolbar>
   </ion-header>
-
   <ion-content>
-    <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
-    </ion-list>
+      <ion-list>
+          <button *ngIf="!userId" class="side-menu-list" icon-left menuClose ion-item (click)="openPage('EntryPage')">
+                          <ion-icon color="secondary" class="page-icon" name="person"></ion-icon>
+                          <span class="page-name bebas">{{'EntryPage' | translate}}</span>
+                      </button>
+          <button *ngIf="userId" class="side-menu-list" icon-left menuClose ion-item (click)="openPage('ProfilePage')">
+                              <ion-icon color="secondary" class="page-icon" name="person"></ion-icon>
+                              <span class="page-name bebas">{{'Profile' | translate}}</span>
+                      </button>
+          <button class="side-menu-list" icon-left menuClose ion-item (click)="openPage('MoadiOffersPage')">
+                          <ion-icon color="secondary" class="page-icon" name="logo-usd"></ion-icon>
+                          <span class="page-name bebas">{{'MoadiOffers' | translate}}</span>
+                      </button>
+          <button class="side-menu-list" icon-left menuClose ion-item (click)="openPage('WhoWeArePage')">
+                              <ion-icon color="secondary" class="page-icon" name="alert"></ion-icon>
+                              <span class="page-name bebas">{{'WhoWeAre' | translate}}</span>
+                      </button>
+          <button class="side-menu-list" icon-left menuClose ion-item (click)="openPage('ContactUsPage')">
+                              <ion-icon color="secondary" class="page-icon" name="mail"></ion-icon>
+                              <span class="page-name bebas">{{'Contactus' | translate}}</span>
+                      </button>
+          <button class="side-menu-list" icon-left menuClose ion-item (click)="changeLanguage()">
+                          <ion-icon color="secondary" class="page-icon" name="alert"></ion-icon>
+                          <span class="page-name bebas">{{'ChangeLanguages' | translate}}</span>
+                      </button>
+      </ion-list>
   </ion-content>
-
 </ion-menu>
-
-<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

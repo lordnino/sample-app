@@ -1,0 +1,32 @@
+page-login {
+    display: table;
+    font-family: sans-serif !important;
+    .bg {
+        background-image: url('../assets/img/BG.jpg');
+        background-size: cover;
+    }
+    .list-md .item-input:last-child {
+        border-bottom: 0px;
+    }
+    .list {
+        margin: 10% !important;
+        margin-top: 50% !important;
+    }
+    .login {
+        color: #fff;
+        background-color: #8aae0f;
+        border-radius: 0px;
+        margin: 0;
+        font-family: sans-serif;
+    }
+    p {
+        color: #167178;
+        cursor: pointer;
+    }
+    .item {
+        margin: 3% !important;
+    }
+    .arabic {
+        direction: rtl;
+    }
+}

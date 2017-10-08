@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+      <ion-title>{{'login-header' | translate}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg">
+  <ion-list class="list">
+    <form (ngSubmit)="logForm()">
+      <ion-item [ngClass]="{'arabic': translate.isArabic}">
+        <ion-label>{{'login-email' | translate}} </ion-label>
+        <ion-input type="text" [(ngModel)]="user.Email" name="Email"></ion-input>
+      </ion-item>
+      <ion-item [ngClass]="{'arabic': translate.isArabic}">
+
+        <ion-input [(ngModel)]="user.Password" type="password" name="Password"></ion-input>
+        <ion-label> {{'login-password' | translate}}</ion-label>
+
+      </ion-item>
+      <ion-row>
+        <ion-col col-8 offset-2>
+          <button ion-button full class="login" color="secondary">{{'login-login' | translate}}</button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-list>
+  <p text-center (click)="forgetPassword()">{{'login-forgot' | translate}} </p>
+
+  <p (click)="signup()" text-center>{{'login-new' | translate}}</p>
+</ion-content>

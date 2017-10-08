@@ -1,0 +1,23 @@
+/* issues in sign-up collision in names */
+// "header": "تسجيل حساب",
+// "email": "البريد الاكتروني",
+// "password": "كلمة السر",
+// "signup": "تسجيل",
+// "name": "الأسم بالكامل",
+// "phone": "رقم الهاتف",
+// "repwd": "اعد كلمة السر",
+// "cancel": "الغاء",
+// "send": "ارسال",
+// "errorTitle": "حدث خطأ",
+
+/* issues in smsconfirm collision in names */
+// header: "تفعيل الحساب",
+// input: "ادخل كود التفعيل لرقم",
+// Activate: "تفعيل الحساب",
+// forgot: "إعادة ارسال",
+// cancel: "الغاء",
+// send: "ارسال",
+// errorTitle:"حدث خطأ",
+// confirm:"لقد تم ارسال رساله اخري",
+// activated: "تم تأكيد الحساب بنجاح",
+// code : "كود التفعيل"
